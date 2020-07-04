@@ -9,12 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    
+    
+    @IBAction func next(_ sender: Any) {
+    }
+    
+    
+    @IBAction func back(_ sender: Any) {
+    }
+    
 
 }
 
