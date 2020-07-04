@@ -24,6 +24,12 @@ class ViewController: UIViewController {
         webView.frame = CGRect(x: 0, y:toolBar.frame.size.height, width: view.frame.size.width, height: view.frame.size.height - toolBar.frame.size.height * 2)
         
         view.addSubview(webView)
+        
+        // loading
+        let url = URL(string: "https://www.yahoo.co.jp/")
+        let request = URLRequest(url: url!)
+        
+        webView.load(request)
     }
     
     @IBAction func next(_ sender: Any) {
